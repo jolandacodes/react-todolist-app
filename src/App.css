@@ -2,8 +2,118 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   background-color: rgb(255, 246, 120);
 }
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(184, 184, 184);
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.form {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(184, 184, 184);
+  margin: 10px;
+  border-radius: 8px;
+}
+
+input {
+  border: none;
+  width: 200px;
+  height: 30px;
+}
+
+input:focus {
+  outline: 2px solid coral;
+  border-radius: 2px;
+}
+
+.lists {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(184, 184, 184);
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.button-box {
+  display: flex;
+  background-color: rgb(255, 246, 120);
+  width: 40px;
+  height: 30px;
+  background-color: ;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.button-box i {
+  font-size: 20px;
+}
+
+/*CUSTOM SELECTOR */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
+/* Custom Select */
+.select {
+  margin-left: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+select {
+  color: #ff6f47;
+  cursor: pointer;
+  width: 12rem;
+  height: 30px;
+}
+
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: #ff6f47;
+  cursor: pointer;
+  pointer-events: none;
+  height: 30px;
+  margin-left: 5px;
+}
+
