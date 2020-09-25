@@ -23,30 +23,49 @@ body {
   justify-content: center;
 }
 
+.second-wrapper {
+    background-color: rgb(184, 184, 184);
+    min-width: 450px;
+    height: 600px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);}
+
+
 .header {
-  width: 600px;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  background-color: rgb(184, 184, 184);
-  margin: 10px;
-  border-radius: 8px;
+  color: rgb(60, 59, 59);
+  font-weight: 300;
+  text-align: center;
+  margin: 40px 20px 50px 20px;
+  font-family: 'Josefin Slab', serif;
+}
+.filter-todo {
+  width: 200px;
+  box-sizing: border-box;
 }
 
 .form {
   width: 600px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 20px;
   background-color: rgb(184, 184, 184);
   margin: 10px;
   border-radius: 8px;
 }
 
 input {
-  border: none;
-  width: 200px;
-  height: 30px;
+  width: 100%;
+  min-width: 250px;
+  padding: 15px 10px 10px 20px;
+  margin-right: 10px;
+  font-family: 'Josefin Sans', serif;
+  font-size: 15px;
+  color: #ccc;
+  border: 1px solid rgb(214, 213, 213);
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 input:focus {
@@ -57,22 +76,27 @@ input:focus {
 .lists {
   width: 600px;
   display: flex;
-  justify-content: center;
-  padding: 20px;
   background-color: rgb(184, 184, 184);
   margin: 10px;
   border-radius: 8px;
 }
 
-.button-box {
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-box {
   display: flex;
   background-color: rgb(255, 246, 120);
-  width: 40px;
-  height: 30px;
+  width: 50px;
   background-color: ;
   justify-content: center;
   align-items: center;
-  margin-left: 5px;
+  margin-left: 2px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .button-box i {
@@ -97,23 +121,55 @@ select {
   position: relative;
   overflow: hidden;
 }
-select {
-  color: #ff6f47;
+.select-wrapper {
+  display: flex;
+  justify-content: center;
   cursor: pointer;
-  width: 12rem;
-  height: 30px;
+  height: 40px;
 }
 
-/* Arrow */
-.select::after {
-  content: "\25BC";
-  top: 0;
-  right: 0;
-  padding: 1rem;
-  background: #ff6f47;
-  cursor: pointer;
-  pointer-events: none;
-  height: 30px;
-  margin-left: 5px;
+.list-item {
+  list-style: none;
+  padding: 10px;
 }
 
+.list-item-btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.btns-wrapper {
+  display: flex;
+  padding: 20px;
+  height: 50px;
+  justify-content: space-evenly;
+}
+
+.clear-btn, .add-btn {
+  width: 100px;
+  height: 40px;
+  background: #7c1f05;
+  color: #ccc;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+  cursor: pointer;
+}
+
+.filter-btn-box {
+  display: flex;
+  background-color: rgb(255, 246, 120);
+  width: 50px;
+  background-color: ;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}

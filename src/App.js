@@ -2,40 +2,25 @@ import React, { useState } from 'react';
 import './App.css';
 import Form from './components/Form';
 import List from './components/List';
+import ToDoContextProvider from './ToDoContext'
 
 
 function App() {
 
-  const [prevState, setState] = useState(
-    {
-      input: ""
-    }
-  );
-
-  const handleInput = (e) => {
-    var userInput = e.target.value;
-
-    setState({
-      ...prevState, 
-      input: userInput
-    });
-
-    console.log(prevState.input);
-  }
-
-  const search = (e) => {
- }
-
   return (
+    <ToDoContextProvider>
     <div className="App">
       <div className="wrapper">
-        <div className="header">
-          <h1>To Do List</h1>
+        <div className="second-wrapper">
+          <div className="header">
+            <h1>To Do List</h1>
+          </div>
+          <Form />
+          <List />
         </div>
-        <Form handleInput={handleInput} search={search} />
-        <List />
       </div>
     </div>
+    </ToDoContextProvider>
   );
 }
 
