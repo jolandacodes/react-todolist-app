@@ -8,7 +8,7 @@ export default function Todo({tasks}) {
 
     return (
             <div key={tasks.id}>
-                <li className="list-item">{tasks.title}
+                <li className="list-item"><span>{tasks.title}</span>
                 <button className="list-item-btn" onClick={() => completeTask(tasks.id)}><i className="fa fa-check" aria-hidden="true"></i></button>
                 <button className="list-item-btn" onClick={() => removeTask(tasks.id)}><i className="fa fa-trash" aria-hidden="true"></i></button>
                 </li>

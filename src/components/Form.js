@@ -13,17 +13,17 @@ function Form() {
   const handleAdd = (e) => {
     e.preventDefault();
 
-    addTask(userInput);
-    setUserInput("");
+    if (e.key === "Enter") {
+        addTask(userInput);
+        setUserInput("");
+    }
+   
   };
 
   return (
     <div className="form">
         <div className="input-wrapper">
             <input type="text" onChange={handleInput} value={userInput}></input>
-            <div className="btn-box" onClick={handleAdd}>
-                <i className="fa fa-plus" aria-hidden="true"></i>
-            </div>
         </div>
         <div className="btns-wrapper">
             <button className="add-btn">Add Task</button>

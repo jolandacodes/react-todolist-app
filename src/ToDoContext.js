@@ -25,7 +25,7 @@ const ToDoContextProvider = (props) => {
     }
 
     const completeTask = (id) => {
-
+        
     }
 
     return <ToDoContext.Provider value={{tasks, addTask, completeTask, removeTask}}>

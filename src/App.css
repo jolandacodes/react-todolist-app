@@ -24,13 +24,14 @@ body {
 }
 
 .second-wrapper {
-    background-color: rgb(184, 184, 184);
-    min-width: 450px;
-    height: 600px;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);}
-
+  background-color: rgb(184, 184, 184);
+  min-width: 450px;
+  height: 600px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  margin: 30px;
+}
 
 .header {
   color: rgb(60, 59, 59);
@@ -39,6 +40,7 @@ body {
   margin: 40px 20px 50px 20px;
   font-family: 'Josefin Slab', serif;
 }
+
 .filter-todo {
   width: 200px;
   box-sizing: border-box;
@@ -55,7 +57,7 @@ body {
 }
 
 input {
-  width: 100%;
+  width: 80%;
   min-width: 250px;
   padding: 15px 10px 10px 20px;
   margin-right: 10px;
@@ -69,12 +71,14 @@ input {
 }
 
 input:focus {
-  outline: 2px solid coral;
   border-radius: 2px;
+  color: black;
+
 }
 
 .lists {
   width: 600px;
+  padding: 20px;
   display: flex;
   background-color: rgb(184, 184, 184);
   margin: 10px;
@@ -121,6 +125,7 @@ select {
   position: relative;
   overflow: hidden;
 }
+
 .select-wrapper {
   display: flex;
   justify-content: center;
@@ -129,8 +134,11 @@ select {
 }
 
 .list-item {
+  margin-top: 22px;
+  font-size: 22px;
   list-style: none;
   padding: 10px;
+  color: rgb(60, 59, 59);
 }
 
 .list-item-btn {
@@ -140,6 +148,12 @@ select {
   outline: none;
 }
 
+.list-item-btn i {
+  font-size: 22px;
+  margin-left: 10px;
+  color: rgb(60, 59, 59);
+}
+
 .btns-wrapper {
   display: flex;
   padding: 20px;
@@ -147,7 +161,8 @@ select {
   justify-content: space-evenly;
 }
 
-.clear-btn, .add-btn {
+.clear-btn,
+.add-btn {
   width: 100px;
   height: 40px;
   background: #7c1f05;
@@ -172,4 +187,8 @@ select {
   box-sizing: border-box;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.completed {
+  text-decoration: line-through;
 }
